@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/479bbe3bd5.js" crossorigin="anonymous"></script>
+    <title>gerador de perfil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="position-text">
+            <h1>Gerador de perfil <i class="fa-sharp fa-solid fa-user-plus"></i></h1>
+            <h5 id="frase">Crie um perfil para uma nova finalidade!</h5>
+        </div>
+    </header>
+
+    <div class="position-imagens">
+        <img src="./2387693-icone-do-perfil-do-usuario-vetor-removebg-preview.png" alt="photo_perfil" id="imagem">
+        <div class="juncao-name"><h3 id="nomeUser">Nome </h3><h3 id="nomeUser2"> do usuário</h3></div>
+
+    </div>
+    <div class="space-information">
+        <h4>Informações complementares</h4>
+        <div class="template-grid">
+            <div class="information-complement">
+                <h5>Email</h5>
+                <span id="span1"></span>
+            </div>
+            <div class="information-complement">
+                <h5>Celular</h5>
+                <span id="span2"></span>
+            </div>
+            <div class="information-complement">
+                <h5>Idade</h5>
+                <span id="span3"></span>
+            </div>
+            <div class="information-complement">
+                <h5>Gênero</h5>
+                <span id="span4"></span>
+            </div>
+            <div class="information-complement">
+                <h5>País</h5>
+                <span id="span5"></span>
+            </div>
+            <div class="information-complement">
+                <h5>Último nome</h5>
+                <span id="span6"></span>
+            </div>
+        </div>
+    </div>
+    <button onclick="getApiData()">Gerar Perfil</button>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
