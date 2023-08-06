@@ -1,44 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap&family=Babylonica&family=Bebas+Neue&family=Catamaran:wght@700&family=Chivo+Mono:wght@200&family=Dancing+Script&family=Gajraj+One&family=Gloock&family=Heebo:wght@400;500;700&family=Lato:wght@700&family=League+Spartan:wght@400;600;700&family=Montserrat:wght@300&family=Noto+Sans:ital@1&family=Open+Sans:wght@500&family=Oswald:wght@500&family=Playfair+Display:wght@500&family=Poltawski+Nowy:wght@700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200&family=Raleway:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Nunito:wght@200&family=Raleway:wght@300&family=Roboto+Condensed:ital,wght@1,300&family=Roboto:ital,wght@0,100;0,300;1,300&display=swap');
+
+
 
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
-
 }
 
 body {
-    height: 120vh;
-    width: 100vw;
-    background-color: rgb(203, 203, 203);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Open Sans';
+    height: 100vh;
+    background-color: rgb(203, 203, 203, 0.2);
+    font-family: 'Roboto';
+    transition: .3s;
+
 }
 
 header {
     width: 100%;
     height: auto;
-    background-color: blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(203, 203, 203);
+    background: linear-gradient( 18deg, #00aaff, #0088cc);
+    box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+}
+
+.position-text{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    color: azure;
+    display: grid;
+    place-items: center;
+
 }
 
 .position-imagens {
-    width: 100%;
-    height: 260px;
+    height: auto;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-
+    align-items: center;
+    max-width: 1200px;
+    gap: 20px;
+    margin: 20px auto; 
 }
 
-.position-imagens>div {
+.position-imagens > div {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -50,22 +58,38 @@ img {
     height: 200px;
     border: solid white 4px;
     border-radius: 50%;
-    transition: .7s;
-
+    box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+    
 }
 
 .space-information {
     width: 100%;
-    height: 230px;
-    background-color: gray;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    height: auto;
+    background-color: rgb(221, 221, 221);
+}
+.containner{
+    max-width: 1200px;
+    height: 20rem;
+    margin: 0 auto;
+    padding: 5rem;
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    position: relative;
+}
+.containner > h4{
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    display: grid;
+    place-items: center;
 }
 
 .template-grid {
     width: 100%;
-    height: 90%;
+    height: auto;
+    padding: 10px;
+    gap: 7rem;
     display: grid;
     place-items: center;
     grid-template-columns: repeat(3, 3fr);
@@ -73,72 +97,46 @@ img {
 
 .information-complement{
     display: flex;
+    gap: 5px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 1.1rem;
 }
 
 button {
-    margin-top: 20px;
-    width: 200px;
-    height: 50px;
-    background-color: blue;
+    margin: 20px auto;
+    padding: 15px 40px;
     color: white;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
     font-weight: 700;
     font-size: 20px;
     outline: none;
+    background: linear-gradient( 18deg, #00aaff, #0088cc);
+    opacity: 0.9;
+    transition: 400ms ease linear;
 }
 
 button:hover {
-    background-color: rgb(13, 13, 140);
+    opacity: 1;
+
 }
+
 
 /*###part-responsive###*/
 
-@media(max-width: 434px){
-
-    body{
-        height: 150vh;
-    }
-
-    header {
-        width: 100%;
-        height: 100px;
-        background-color: blue;
-        display: flex;
-        color: rgb(203, 203, 203)
-    }
-    
-    .template-grid {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        gap: 20px;
-        margin-top: 20px;
-    }
-    .space-information{
+@media (max-width: 880px){
+    .containner{
         height: auto;
     }
+    .template-grid{
+       display: flex;
+       flex-direction: column;
+       gap: 7rem;
 
-    button {
-        width: 200px;
-        height: 50px;
-        background-color: blue;
-        color: white;
-        border: none;
-        border-radius: 10px;
-        cursor: pointer;
-        font-weight: 700;
-        font-size: 20px;
-        margin: 10px
     }
-
 }
 
 
